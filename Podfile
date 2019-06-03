@@ -41,7 +41,12 @@ target 'UmbrellaMixpanelTests' do
   pod 'Mixpanel'
 end
 
+target 'UmbrellaBranchIO' do
+    platform :ios, '8.0'
+    pod 'Branch'
+end
+
 target 'UmbrellaBranchIOTests' do
-platform :ios, '8.0'
-pod 'Branch'
+    platform :ios, '8.0'
+    pod 'Branch'
 end
