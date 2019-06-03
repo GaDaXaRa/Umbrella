@@ -1,4 +1,5 @@
 import Foundation
+import Branch
 
 final class BranchIOProvider: ProviderType {
   func log(_ eventName: String, parameters: [String: Any]?) {
