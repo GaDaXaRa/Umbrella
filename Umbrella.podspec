@@ -59,4 +59,9 @@ Pod::Spec.new do |s|
     ss.source_files = "Sources/UmbrellaMixpanel/*.swift"
     ss.dependency "Umbrella/Core"
   end
+
+  s.subspec "BranchIO" do |ss|
+    ss.source_files = "Sources/UmbrellaBranchIO/*.swift"
+    ss.dependency "Umbrella/Core"
+  end
 end

@@ -17,6 +17,7 @@ let package = Package(
     .library(name: "UmbrellaFlurry", targets: ["UmbrellaFlurry"]),
     .library(name: "UmbrellaLocalytics", targets: ["UmbrellaLocalytics"]),
     .library(name: "UmbrellaMixpanel", targets: ["UmbrellaMixpanel"]),
+    .library(name: "UmbrellaBranchIO", targets: ["UmbrellaBranchIO"]),
   ],
   targets: [
     .target(name: "Umbrella"),
@@ -27,7 +28,8 @@ let package = Package(
     .target(name: "UmbrellaFirebase", dependencies: ["Umbrella"]),
     .target(name: "UmbrellaFlurry", dependencies: ["Umbrella"]),
     .target(name: "UmbrellaLocalytics", dependencies: ["Umbrella"]),
-    .target(name: "UmbrellaMixpanel", dependencies: ["Umbrella"]),
+    .target(name: "UmbrellaBranchIO", dependencies: ["Umbrella"]),
+    .testTarget(name: "UmbrellaTests", dependencies: ["Umbrella"]),
     .testTarget(name: "UmbrellaTests", dependencies: ["Umbrella"]),
     .testTarget(name: "UmbrellaAmplitudeTests", dependencies: ["UmbrellaAmplitude"]),
     .testTarget(name: "UmbrellaAnswersTests", dependencies: ["UmbrellaAnswers"]),
@@ -37,6 +39,7 @@ let package = Package(
     .testTarget(name: "UmbrellaFlurryTests", dependencies: ["UmbrellaFlurry"]),
     .testTarget(name: "UmbrellaLocalyticsTests", dependencies: ["UmbrellaLocalytics"]),
     .testTarget(name: "UmbrellaMixpanelTests", dependencies: ["UmbrellaMixpanel"]),
+    .testTarget(name: "UmbrellaBranchIOTests", dependencies: ["UmbrellaBranchIO"]),
   ],
   swiftLanguageVersions: [.v5]
 )
