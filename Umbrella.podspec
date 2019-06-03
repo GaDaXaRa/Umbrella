@@ -63,5 +63,6 @@ Pod::Spec.new do |s|
   s.subspec "BranchIO" do |ss|
     ss.source_files = "Sources/UmbrellaBranchIO/*.swift"
     ss.dependency "Umbrella/Core"
+    ss.dependency "Branch"
   end
 end
