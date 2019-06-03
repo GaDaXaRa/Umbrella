@@ -13,4 +13,6 @@ open class BranchIOProvider: ProviderType {
         }
         event.logEvent()
     }
+    
+    public init() {}
 }
